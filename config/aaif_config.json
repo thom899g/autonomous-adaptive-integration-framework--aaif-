@@ -1,0 +1,26 @@
+{
+    "version": "1.0",
+    "adapters": [
+        {
+            "name": "knowledge_base_adapter",
+            "type": "database",
+            "config": {
+                "host": "localhost",
+                "port": 3306,
+                "db_name": "evolution_db"
+            }
+        },
+        {
+            "name": "api_gateway_adapter",
+            "type": "api",
+            "config": {
+                "url": "http://api.example.com/v1"
+            }
+        }
+    ],
+    "logging": {
+        "level": "INFO",
+        "handlers": ["console", "file"],
+        "filename": "aaif.log"
+    }
+}
